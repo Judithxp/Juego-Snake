@@ -1,0 +1,95 @@
+body {
+    background-color: #1e1e1e; /* Color oscuro estilo VS Code */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    touch-action: manipulation; /* Evita el zoom molesto al pulsar rápido en el móvil */
+}
+
+.game-container {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 5px 0;
+    font-size: 24px;
+}
+
+canvas {
+    background-color: #252526;
+    border: 4px solid #007acc; /* Azul clásico de VS Code */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    max-width: 100%; /* Hace que el lienzo se encoja en pantallas de móvil */
+    height: auto;
+}
+
+/* Controles de la botonera móvil */
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+/* Botón de Pausa / Play estilizado */
+.btn-pause {
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #333333;
+    border: 2px solid #007acc;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-pause:active {
+    background-color: #007acc;
+}
+
+/* Distribución en cruceta (D-Pad) */
+.d-pad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    gap: 50px; /* Hueco exacto para que la cruceta quede simétrica */
+    margin: -5px 0; /* Contrae el espacio vertical para compactar los botones */
+}
+
+.btn {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+    background-color: #333333;
+    border: 2px solid #007acc;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+/* Efecto visual inmediato al tocar las flechas */
+.btn:active {
+    background-color: #007acc; 
+    transform: scale(0.95);
+}
