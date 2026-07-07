@@ -7,22 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="game-container">
-        <h1>Puntuación: <span id="score">0</span></h1>
-        <canvas id="gameCanvas" width="400" height="400"></canvas>
-        
-        <div class="controls">
-            <button id="btnPausa" class="btn-pause" onclick="alternarPausa()">PLAY</button>
-            <div class="d-pad">
-                <button class="btn" id="btnUp">🔼</button>
-                <div class="row">
-                    <button class="btn" id="btnLeft">◀️</button>
-                    <button class="btn" id="btnRight">▶️</button>
+    
+    <div id="pantalla-inicio">
+        <h1 class="titulo-juego" style="color: #00f3ff; font-family: sans-serif; font-size: 3rem; margin-bottom: 20px; text-shadow: 0 0 10px #00f3ff;">Snake</h1>
+        <button id="boton-jugar" class="boton-juego" style="padding: 15px 40px; font-size: 22px; background-color: #00f3ff; color: #14151f; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; box-shadow: 0 0 15px #00f3ff;">JUGAR</button>
+    </div>
+
+    <div id="juego-contenedor" style="display: none;">
+        <div class="game-container">
+            <h1>Puntuación: <span id="score">0</span></h1>
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            
+            <div class="controls">
+                <button id="btnPausa" class="btn-pause" onclick="alternarPausa()">PLAY</button>
+                <div class="d-pad">
+                    <button class="btn" id="btnUp">🔼</button>
+                    <div class="row">
+                        <button class="btn" id="btnLeft">◀️</button>
+                        <button class="btn" id="btnRight">▶️</button>
+                    </div>
+                    <button class="btn" id="btnDown">🔽</button>
                 </div>
-                <button class="btn" id="btnDown">🔽</button>
             </div>
+
+            <div id="controles-fin" style="display: none; text-align: center; margin-top: 15px;">
+                <button id="btn-reiniciar" class="boton-juego" style="padding: 12px 20px; font-size: 16px; font-weight: bold; border: none; border-radius: 5px; cursor: pointer; background-color: #00f3ff; margin: 5px;">VOLVER A JUGAR</button>
+                <button id="btn-salir" class="boton-juego" style="padding: 12px 20px; font-size: 16px; font-weight: bold; border: none; border-radius: 5px; cursor: pointer; background-color: #ff0055; color: white; margin: 5px;">SALIR AL MENÚ</button>
+            </div>
+
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

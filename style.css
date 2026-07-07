@@ -93,3 +93,36 @@ canvas {
     background-color: #007acc; 
     transform: scale(0.95);
 }
+#pantalla-inicio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1e1e1e; /* Color oscuro base */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que tape todo al cargar */
+}
+
+/* Ajuste para los botones del menú final */
+#controles-fin {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Hacemos que los botones tengan un estilo uniforme */
+.boton-juego {
+    border: 2px solid #007acc;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.boton-juego:hover {
+    transform: scale(1.05);
+}
