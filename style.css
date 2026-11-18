@@ -66,8 +66,8 @@ canvas {
 
 .row {
     display: flex;
-    gap: 60px; 
-    margin: 5px 0; 
+    gap: 80px; 
+    margin: -5px 0; 
 }
 
 .btn {
