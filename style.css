@@ -1,5 +1,5 @@
 body {
-    background-color: #1e1e1e; /* Color oscuro estilo VS Code */
+    background-color: #1e1e1e; 
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
@@ -25,9 +25,9 @@ h1 {
 
 canvas {
     background-color: #252526;
-    border: 4px solid #007acc; /* Azul clásico de VS Code */
+    border: 4px solid #007acc; 
     box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-    max-width: 100%; /* Hace que el lienzo se encoja en pantallas de móvil */
+    max-width: 100%;
     height: auto;
 }
 
@@ -40,7 +40,6 @@ canvas {
     gap: 15px;
 }
 
-/* Botón de Pausa / Play estilizado */
 .btn-pause {
     width: 120px;
     height: 40px;
@@ -67,8 +66,8 @@ canvas {
 
 .row {
     display: flex;
-    gap: 60px; /* Hueco exacto para que la cruceta quede simétrica */
-    margin: 5px 0; /* Contrae el espacio vertical para compactar los botones */
+    gap: 60px; 
+    margin: 5px 0; 
 }
 
 .btn {
@@ -88,7 +87,6 @@ canvas {
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
-/* Efecto visual inmediato al tocar las flechas */
 .btn:active {
     background-color: #007acc; 
     transform: scale(0.95);
@@ -99,22 +97,20 @@ canvas {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #1e1e1e; /* Color oscuro base */
+    background-color: #1e1e1e;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Asegura que tape todo al cargar */
+    z-index: 1000; 
 }
 
-/* Ajuste para los botones del menú final */
 #controles-fin {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-/* Hacemos que los botones tengan un estilo uniforme */
 .boton-juego {
     border: 2px solid #007acc;
     border-radius: 5px;
