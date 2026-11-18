@@ -67,8 +67,8 @@ canvas {
 
 .row {
     display: flex;
-    gap: 50px; /* Hueco exacto para que la cruceta quede simétrica */
-    margin: -5px 0; /* Contrae el espacio vertical para compactar los botones */
+    gap: 60px; /* Hueco exacto para que la cruceta quede simétrica */
+    margin: 5px 0; /* Contrae el espacio vertical para compactar los botones */
 }
 
 .btn {
